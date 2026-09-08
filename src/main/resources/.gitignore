@@ -1,0 +1,22 @@
+gitignore
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# Maven
+target/
+.mvn/
+.m2/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yaml

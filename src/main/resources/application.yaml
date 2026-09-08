@@ -8,5 +8,20 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+
+  telegram:
+    bot:
+      username: YourBotUsername
+      token: YOUR_BOT_TOKEN
+
+  providers:
+    site1:
+      url: https://site1.com/register
+      timeout: 5000
+    site2:
+      url: https://site2.com/api/signup
+      api-key: xxx
