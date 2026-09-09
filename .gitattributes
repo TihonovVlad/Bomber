@@ -1,2 +1,19 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+# Автоматически нормализовать окончания строк для текстовых файлов
+* text=auto
+
+# Явно указать для конкретных типов
+*.java text
+*.xml text
+*.yaml text
+*.yml text
+*.properties text
+*.md text
+*.txt text
+
+# Бинарные файлы (не трогать)
+*.png binary
+*.jpg binary
+*.jar binary
+*.class binary

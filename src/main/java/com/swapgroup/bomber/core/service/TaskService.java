@@ -3,18 +3,16 @@ package com.swapgroup.bomber.core.service;
 import com.swapgroup.bomber.core.model.enums.STATUS;
 import com.swapgroup.bomber.core.model.User;
 
-import java.util.UUID;
-
 public class TaskService {
 
     void createTask(User user, String phone) {
 
     };
 
-    void startTask(UUID taskId) {
+    void startTask(Long taskId) {
 
     };
-    STATUS getTaskStatus(UUID taskId){
+    STATUS getTaskStatus(Long taskId){
         return STATUS.NEW;
     }
 }

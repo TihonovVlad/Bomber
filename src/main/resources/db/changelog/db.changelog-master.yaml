@@ -1,7 +1,5 @@
 databaseChangeLog:
-  - changeSet:
-      id: 1
-      author: your_name
-      changes:
-        - tagDatabase:
-            tag: initial
+  - include:
+      file: db/changelog/001_create_users.yaml
+  - include:
+      file: db/changelog/002_create_tasks.yaml
